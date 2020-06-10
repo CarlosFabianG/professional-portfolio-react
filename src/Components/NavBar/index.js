@@ -33,9 +33,7 @@ function NavBar(){
         <StyledNavBar>
             <img src={logo}/>
             <ul class="menu">
-                <li>Home</li>
-                <li>Portfolio</li>
-                <li>Contacto</li>
+                
             </ul>
         </StyledNavBar>
         </>
