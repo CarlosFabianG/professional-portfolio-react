@@ -6,6 +6,7 @@ import styled from 'styled-components'
 
 const StyledNavBar = styled.nav`
     margin: 30px 0;
+    backgorund: rgb(250, 250, 250);
     display: flex;
     justify-content: space-between;
     img {
