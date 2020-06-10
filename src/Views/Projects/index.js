@@ -61,7 +61,7 @@ const StyledMain = styled.main`
 
 function Projects(){
     return(
-        <main class="portfolio-layout">
+        <StyledMain class="portfolio-layout">
 
             <section class="section-portfolio-odd">
                 <img src="images/portfolio/desktop/image-portfolio-manage.jpg" />
@@ -126,7 +126,7 @@ function Projects(){
                     <button>Contáctame</button>
                 </div>
             </section>
-        </main>
+        </StyledMain>
     )
 }
 

@@ -10,11 +10,12 @@ padding: 0 10vw;
 background: rgb(250, 250, 250);
 `
 
-function Layout(){
+function Layout(props){
     return(
         <>
         <Wrapper>
             < NavBar />
+            {props.children}
             < ContactMe />
         </Wrapper>
         <Footer />

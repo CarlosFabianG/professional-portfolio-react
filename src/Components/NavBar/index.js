@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 import logo from './logo.svg'
 import styled from 'styled-components'
@@ -33,7 +33,9 @@ function NavBar(){
         <StyledNavBar>
             <img src={logo}/>
             <ul class="menu">
-                
+                <li><Link to={'/'}>Home</Link></li>
+                <li><Link to={'/projects'} >Portfolio</Link></li>
+                <li><Link to={'/contact'} >Contacto</Link></li>
             </ul>
         </StyledNavBar>
         </>
