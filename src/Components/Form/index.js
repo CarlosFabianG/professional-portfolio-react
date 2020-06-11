@@ -6,6 +6,7 @@ const StyledForm = styled.form`
     display: flex;
     flex-direction: column;
     width: 635px;
+    font-family: 'Public Sans', sans-serif;
     label {
         color: #33323D;
         font-weight: 700;

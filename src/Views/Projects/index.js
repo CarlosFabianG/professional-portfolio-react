@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import manage from './desktop-design-dark.jpg'
 import bestExchangeImg from './image-best-exchange1.png'
@@ -35,6 +35,7 @@ button {
     font-size: 12px;
     letter-spacing: .5px;
     text-transform: uppercase;
+    cursor: pointer;
 }
 img {
     width: 45vw;
@@ -94,7 +95,7 @@ function Projects(){
                         I used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, 
                         such as the testimonial slider.
                     </div>
-                    <button>Ver proyecto</button>
+                    <Link to={'/projects/sm-dashboard'}><button>Ver proyecto</button></Link>
                 </article>
             </section>
 

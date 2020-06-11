@@ -106,7 +106,7 @@ function Contact(){
 
     <StyledContact2>
       <div class="title">
-        <h3>Contact Me</h3>
+        <h3>Contáctame</h3>
       </div>
 
       <div class="form">

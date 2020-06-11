@@ -1,5 +1,5 @@
 import React from 'react'
-import PreviousNext from '../../Components/PreviousNext'
+import PreviousNext from '../../../Components/PreviousNext'
 import styled from 'styled-components'
 
 import hero from './image-manage-hero.jpg'
@@ -13,8 +13,8 @@ const StyledMain = styled.main`
 display: flex;
 article {
     height: 460px;
-    border-top: solid var(--light-grey) 1px;
-    border-bottom: solid var(--light-grey) 1px;
+    border-top: solid rgb(234, 234, 235) 1px;
+    border-bottom: solid rgb(234, 234, 235) 1px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -96,9 +96,8 @@ function ProjectDetail(){
                     <img src="images/detail/desktop/image-manage-preview-2.jpg" alt="static previews" />
                 </div>
             </section>
-
-            < PreviousNext />
         </StyledMain>
+        < PreviousNext />
         </>
     )
 }

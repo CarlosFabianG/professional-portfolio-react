@@ -1,13 +1,16 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
+import arrowLeft from './arrow-left.svg'
+import arrowRight from './arrow-right.svg'
 
 const StyledPreviousNext = styled.section`
     display: flex;
     border-top: solid rgb(234, 234, 235) 1px;
-    border-bottom: rgb(234, 234, 235) 1px;
+    border-bottom: solid rgb(234, 234, 235) 1px;
     height: 132px;
     margin-top: 5vh;
+    color: #33323D;
     img {
         height: 16px;
     }
@@ -45,23 +48,23 @@ const StyledPreviousNext = styled.section`
 `
 
 
-function PreviousNext(){
+function PreviousNext(props){
     return(
         <StyledPreviousNext>
             <div className="left-button">
-                <img src="images/icons/arrow-left.svg" />
+                <img src={arrowLeft} />
                 <div>
-                    <p>Fylo</p>
+                     <p>{props.previous}</p>
                     <span>Previous Project</span>
                 </div>
             </div>
 
             <div className="right-button">
                 <div>
-                    <p>Bookmark</p>
+                    <p>{props.next}</p>
                     <span>Next Project</span>
                 </div>
-            <img src="images/icons/arrow-right.svg" />
+            <Link to={props.nextProject}><img src={arrowRight} /></Link>
             </div>
       </StyledPreviousNext>
     )

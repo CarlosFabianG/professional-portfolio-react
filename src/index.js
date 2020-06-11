@@ -1,27 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import { BrowserRouter, Route, Switch } from 'react-router-dom'
-import Layout from './Components/Layout'
+import { BrowserRouter } from 'react-router-dom'
 import * as serviceWorker from './serviceWorker';
-import ProjectDetail from './Views/ProjectDetail';
-import Projects from './Views/Projects';
-import Home from './Views/Home'
-import Contact from './Views/Contact'
-import Error404 from './Views/Error404'
+
+import Router from './Router'
 
 ReactDOM.render(
   <BrowserRouter>
-    <Layout>
-      <Switch>
-        <Route exact path='/' component={Home}/>
-        <Route exact path='/projects' component={Projects}/>
-        <Route exact path='/projects/:id' component={ProjectDetail}/>
-        <Route exact path='/contact' component={Contact} />
-        <Route component={Error404} />
-      </Switch>
-    </Layout>
+    < Router />
   </BrowserRouter>,
   document.getElementById('root')
 );
