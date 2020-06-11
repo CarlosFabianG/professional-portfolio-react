@@ -40,13 +40,13 @@ function Form(){
         <>
         <StyledForm>
           <label>Name</label>
-          <input class="input-medium" placeholder="Jane Appleseed" />
+          <input className="input-medium" placeholder="Jane Appleseed" />
   
           <label>Email Address</label>
-          <input class="input-medium" placeholder="email@example.com" />
+          <input className="input-medium" placeholder="email@example.com" />
   
           <label>Message</label>
-          <input class="input-large" placeholder="How can I help?" />
+          <input className="input-large" placeholder="How can I help?" />
   
           <button>Send Message</button>
         </StyledForm>

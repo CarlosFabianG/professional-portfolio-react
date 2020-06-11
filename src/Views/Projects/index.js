@@ -1,11 +1,52 @@
 import React from 'react'
 
 import styled from 'styled-components'
+import manage from './desktop-design-dark.jpg'
+import bestExchangeImg from './image-best-exchange1.png'
+import landingMarsImg from './image-landing-mars.png'
+import bestMovieImg from './image-best-movie.png'
 
 const StyledMain = styled.main`
+h3 {
+    font-family: 'Ibarra Real Nova', serif;
+    color: #33323D;
+    font-weight: 700;
+    font-size: 40px;
+}
+article {
+    border-top: solid var(--light-grey) 1px;
+    border-bottom: solid var(--light-grey) 1px;
+    color: #33323D;
+    height: 500px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 6vw;
+}
+button {
+    width: 175px;
+    height: 48px;
+    background: rgb(250, 250, 250);
+    border: solid #33323D 1px;
+    color: #33323D;
+    font-size: 12px;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+}
+img {
+    width: 45vw;
+}
+.text {
+    height: 150px;
+    margin-bottom: 30px;
+    line-height: 2;
+}
 .section-portfolio-odd {
     display: flex;
     margin-top: 10vh;
+    
     article {
         border-top: solid rgb(234, 234, 235) 1px;
         border-bottom: solid rgb(234, 234, 235) 1px;
@@ -17,26 +58,6 @@ const StyledMain = styled.main`
         justify-content: center;
         align-items: flex-start;
         margin-left: 6vw;
-        div {
-            height: 150px;
-            margin-bottom: 30px;
-            line-height: 2;
-        }
-    }
-    h3 {
-        font-family: 'Ibarra Real Nova', serif;
-        color: #33323D;
-        font-weight: 700;
-        font-size: 40px;
-    }
-    button {
-        width: 175px;
-        height: 48px;
-        background: rgb(250, 250, 250);
-        border: solid #33323D 1px;
-        color: #33323D;
-        font-size: 12px;
-        letter-spacing: .5px;
     }
 }
 
@@ -45,8 +66,8 @@ const StyledMain = styled.main`
     justify-content: flex-end;
     margin-top: 10vh;
     article {
-        border-top: solid rgb(250, 250, 250) 1px;
-        border-bottom: solid rgb(250, 250, 250); 1px;
+        border-top: solid rgb(234, 234, 235) 1px;
+        border-bottom: solid rgb(234, 234, 235) 1px;
         color: #33323D;
         height: 500px;
         width: 350px;
@@ -64,7 +85,7 @@ function Projects(){
         <StyledMain class="portfolio-layout">
 
             <section class="section-portfolio-odd">
-                <img src="images/portfolio/desktop/image-portfolio-manage.jpg" />
+                <img src={manage} alt="manage-image"/>
                 <article>
                     <h3>Manage</h3>
                     <div class="text">
@@ -78,54 +99,38 @@ function Projects(){
 
             <section class="section-portfolio-evenly">
                 <article>
-                    <h3>Bookmark</h3>
+                    <h3>Landing in Mars</h3>
                     <div class="text">
-                        This project required me to build a fully responsive landing page to the designs provided. I 
-                        used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, such 
-                        as the features section.
+                        Videojuego tipo shooting en donde puse en práctica mis habilidades con JavaScript puro, especialmente con programación orientada a objetos POO.
                     </div>
                     <button>Ver proyecto</button>
                 </article>
-
-                <img src="images/portfolio/desktop/image-portfolio-bookmark.jpg" />
+                <img src={landingMarsImg} alt="landing-mars-image"/>
             </section>
 
             <section class="section-portfolio-odd">
-                <img src="images/portfolio/desktop/image-portfolio-insure.jpg" />
+                <img src={bestExchangeImg} alt="best-exchange-image"/>
                 <article>
-                    <h3>Manage</h3>
+                    <h3>Best Exchange</h3>
                     <div class="text">
-                        This was a small project which mostly consisted of HTML and CSS. I built a fully-responsive 
-                        landing page. The only JavaScript this project required was to enable the toggling of the 
-                        mobile navigation.
+                        SPA que muestra en tiempo real el valor en el mercado de diferentes criptomonedas. Esta construida con Vue JS, usa tailwind como libreria CSS y consume la API coincape. 
                     </div>
                     <button>Ver proyecto</button>
                 </article>
             </section>
 
             <section class="section-portfolio-evenly">
-                
                 <article>
-                    <h3>Fylo</h3>
+                    <h3>Best Movie</h3>
                     <div class="text">
-                    This project was built in pure HTML and CSS. I had mobile and desktop designs to work to and 
-                    built it so that it was fully-responsive. I took a mobile-first approach and used modern 
-                    CSS like Flexbox and Grid for layout purposes.
+                        SPA que muestra películas con su sinopsis, reviews, trailers, etc.
+                        Esta construida con React, Chakra UI, y consume la API The Movie DB.
                     </div>
                     <button>Ver proyecto</button>
                 </article>
-                <img src="images/portfolio/desktop/image-portfolio-fylo.jpg" />
+                <img src={bestMovieImg} alt="best-movie-image"/>
             </section>
 
-            <section class="section-interested">
-                <div class="grid-item-1">
-                    <h3>Interesado en hacer un proyecto?</h3>
-                </div>
-                <div class="grid-item-2"></div>
-                <div class="grid-item-3">
-                    <button>Contáctame</button>
-                </div>
-            </section>
         </StyledMain>
     )
 }

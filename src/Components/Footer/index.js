@@ -10,6 +10,7 @@ import linkedinIcon from "./linkedin.svg"
 
 const StyledFooter = styled.footer`
 background: rgb(51, 50, 61);
+font-family: 'Public Sans', sans-serif;
 height: 80px;
 display: flex;
 justify-content: space-between;
@@ -48,10 +49,10 @@ return(
     <>
         <StyledFooter>
             <div className="logo-links">
-                <img src={logo}/>
-                <a href="#">Home</a>
-                <a href="#">Portfolio</a>
-                <a href="#">Contacto</a>
+                <NavLink to={'/'}><img src={logo} alt="logo"/></NavLink>
+                <NavLink to={'/'}><a>Home</a></NavLink>
+                <NavLink to={'/projects'}><a>Portfolio</a></NavLink>
+                <NavLink to={'/contact'}><a>Contacto</a></NavLink>
             </div>
             <div className="icons">
                 <a href="https://github.com/CarlosFabianG">

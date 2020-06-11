@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 
 const StyledContactMe = styled.section`
@@ -25,6 +26,7 @@ const StyledContactMe = styled.section`
             font-size: 12px;
             letter-spacing: .5px;
             text-transform: uppercase;
+            cursor: pointer;
         }
     }
 `
@@ -38,7 +40,7 @@ function ContactMe(){
             </div>
             <div className="grid-item-2"></div>
             <div className="grid-item-3">
-                <button>Contáctame</button>
+                <Link to={'/contact'}><button>Contáctame</button></Link>
             </div>
         </StyledContactMe>
         </>
