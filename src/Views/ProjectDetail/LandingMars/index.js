@@ -38,7 +38,7 @@ article {
     button {
         width: 178px;
         height: 48px;
-        background: var(--very-light-gray);
+        background: rgb(250, 250, 250);
         border: solid #33323D 1px;
         color: #33323D;
         font-size: 12px;
@@ -97,7 +97,7 @@ function ProjectDetail(){
                 </div>
             </section>
         </StyledMain>
-        < PreviousNext />
+        < PreviousNext next="Best Exchange" nextProject="/projects/best-exchange" />
         </>
     )
 }

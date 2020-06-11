@@ -2,7 +2,7 @@ import React from 'react'
 import PreviousNext from '../../../Components/PreviousNext'
 import styled from 'styled-components'
 
-import hero from './image-manage-hero.jpg'
+import hero from './best-exchange-hero.png'
 
 const StyledDetailHero = styled.div`
     width: 1110px;
@@ -96,9 +96,8 @@ function ProjectDetail(){
                     <img src="images/detail/desktop/image-manage-preview-2.jpg" alt="static previews" />
                 </div>
             </section>
-
-            < PreviousNext />
         </StyledMain>
+        < PreviousNext next="Best Movie" nextProject={'/projects/best-movie'}/>
         </>
     )
 }
