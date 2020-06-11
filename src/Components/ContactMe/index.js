@@ -7,6 +7,12 @@ const StyledContactMe = styled.section`
     height: 300px;
     display: grid;
     grid-template-columns: 2fr 2fr 1fr;
+    h3 {
+        font-family: 'Ibarra Real Nova', serif;
+        color: #33323D;
+        font-weight: 700;
+        font-size: 40px;
+    }
     .grid-item-1 {
         display: flex;
         align-items: center;

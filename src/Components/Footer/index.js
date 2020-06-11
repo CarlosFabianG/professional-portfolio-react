@@ -24,6 +24,7 @@ align-items: center;
     img {
         color: white;
         padding-right: 40px;
+        height: 20px;
     }
     a {
         color: white;

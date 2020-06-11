@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import heroImage from './image-homepage-hero.jpg'
 import imageProfile from './carlos-fabian-profile.JPG'
+import ContactMe from '../../Components/ContactMe'
 
 const StyledHeader = styled.header`
     min-height: 600px;
@@ -108,6 +109,7 @@ function Home(){
                 <Link to={'/projects'}><button>Mis proyectos</button></Link>
             </article>
         </StyledAbout>
+        < ContactMe />
         </>
     )
 }

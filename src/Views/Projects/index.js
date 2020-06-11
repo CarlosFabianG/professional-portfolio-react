@@ -5,6 +5,7 @@ import manage from './desktop-design-dark.jpg'
 import bestExchangeImg from './image-best-exchange1.png'
 import landingMarsImg from './image-landing-mars.png'
 import bestMovieImg from './image-best-movie.png'
+import ContactMe from '../../Components/ContactMe'
 
 const StyledMain = styled.main`
 h3 {
@@ -130,7 +131,7 @@ function Projects(){
                 </article>
                 <img src={bestMovieImg} alt="best-movie-image"/>
             </section>
-
+            < ContactMe />
         </StyledMain>
     )
 }

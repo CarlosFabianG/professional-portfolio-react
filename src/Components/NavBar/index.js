@@ -11,7 +11,7 @@ const StyledNavBar = styled.nav`
     display: flex;
     justify-content: space-between;
     img {
-        height: 40px;
+        height: 25px;
     }
     .menu {
         display: flex;
