@@ -105,7 +105,7 @@ function Projects(){
                     <div class="text">
                         Videojuego tipo shooting en donde puse en práctica mis habilidades con JavaScript puro, especialmente con programación orientada a objetos POO.
                     </div>
-                    <button>Ver proyecto</button>
+                    <Link to={'/projects/landing-in-mars'}><button>Ver proyecto</button></Link>
                 </article>
                 <img src={landingMarsImg} alt="landing-mars-image"/>
             </section>
@@ -117,7 +117,7 @@ function Projects(){
                     <div class="text">
                         SPA que muestra en tiempo real el valor en el mercado de diferentes criptomonedas. Esta construida con Vue JS, usa tailwind como libreria CSS y consume la API coincape. 
                     </div>
-                    <button>Ver proyecto</button>
+                    <Link to={'/projects/best-exchange'}><button>Ver proyecto</button></Link>
                 </article>
             </section>
 
@@ -128,7 +128,7 @@ function Projects(){
                         SPA que muestra películas con su sinopsis, reviews, trailers, etc.
                         Esta construida con React, Chakra UI, y consume la API The Movie DB.
                     </div>
-                    <button>Ver proyecto</button>
+                    <Link to={'/projects/best-movie'}><button>Ver proyecto</button></Link>
                 </article>
                 <img src={bestMovieImg} alt="best-movie-image"/>
             </section>

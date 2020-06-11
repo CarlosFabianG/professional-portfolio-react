@@ -48,6 +48,7 @@ article {
         letter-spacing: 1px;
         margin-top: 10px;
         text-transform: uppercase;
+        cursor: pointer;
     }
 }
 .project-background {
@@ -78,7 +79,7 @@ function ProjectDetail(){
                 </p>
                 <span>Interaction Design / Front End Development</span>
                 <span>React / Chakra UI / API Rest /</span>
-                <a href="https://best-movie.netlify.app/"><button>Visit Website</button></a>
+                <a href="https://best-movie.netlify.app/" target="_blank"><button>Visit Website</button></a>
             </article>
 
             <section className="project-background">

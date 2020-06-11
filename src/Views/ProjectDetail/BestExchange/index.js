@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import PreviousNext from '../../../Components/PreviousNext'
 import styled from 'styled-components'
 
@@ -48,6 +49,7 @@ article {
         letter-spacing: 1px;
         margin-top: 10px;
         text-transform: uppercase;
+        cursor: pointer;
     }
 }
 .project-background {
@@ -78,7 +80,9 @@ function ProjectDetail(){
                 </p>
                 <span>Interaction Design / Front End Development</span>
                 <span>Vue / Tailwind CSS / API Rest</span>
-                <button>Visit Website</button>
+                <a href="https://best-exchange.netlify.app/" target="_blank">
+                    <button>Visit Website</button>
+                </a>
             </article>
 
             <section className="project-background">

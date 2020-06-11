@@ -48,6 +48,7 @@ article {
         letter-spacing: 1px;
         margin-top: 10px;
         text-transform: uppercase;
+        cursor: pointer;
     }
 }
 .project-background {
@@ -78,7 +79,7 @@ function ProjectDetail(){
                 </p>
                 <span>Video Game / Front End Development</span>
                 <span>HTML / CSS / JS</span>
-                <button>Visit Website</button>
+                <a href="https://carlosfabiang.github.io/learning-in-mars/" target="_blank"><button>Visit Website</button></a>
             </article>
 
             <section className="project-background">
