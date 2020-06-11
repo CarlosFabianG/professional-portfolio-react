@@ -69,7 +69,7 @@ function ProjectDetail(){
         </StyledDetailHero>
         <StyledMain>
             <article>
-                <h2>Manage</h2>
+                <h2>Best Movie</h2>
                 <p>
                     This project required me to build a fully responsive landing page to the designs 
                     provided. I used HTML5, along with CSS Grid and JavaScript for the areas that 
@@ -77,7 +77,7 @@ function ProjectDetail(){
                 </p>
                 <span>Interaction Design / Front End Development</span>
                 <span>HTML / CSS / JS</span>
-                <button>Visit Website</button>
+                <a href="https://best-movie.netlify.app/"><button>Visit Website</button></a>
             </article>
 
             <section className="project-background">
@@ -97,7 +97,10 @@ function ProjectDetail(){
                 </div>
             </section>
         </StyledMain>
-        < PreviousNext next="SM Dashboard" nextProject={'/projects/sm-dashboard'}/>
+        < PreviousNext next="SM Dashboard" 
+                       nextProject={'/projects/sm-dashboard'}
+                       previous="Best Exchange"
+                       previousProject="/projects/landing-in-mars"/>
         </>
     )
 }

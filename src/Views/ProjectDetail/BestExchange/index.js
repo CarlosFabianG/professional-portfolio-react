@@ -97,7 +97,10 @@ function ProjectDetail(){
                 </div>
             </section>
         </StyledMain>
-        < PreviousNext next="Best Movie" nextProject={'/projects/best-movie'}/>
+        < PreviousNext next="Best Movie" 
+                       nextProject='/projects/best-movie'
+                       previous="Landing in Mars"
+                       previousProject="/projects/landing-in-mars"/>
         </>
     )
 }

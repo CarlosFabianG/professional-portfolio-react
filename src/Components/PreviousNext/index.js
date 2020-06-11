@@ -52,7 +52,7 @@ function PreviousNext(props){
     return(
         <StyledPreviousNext>
             <div className="left-button">
-                <img src={arrowLeft} />
+                <Link to={props.previousProject}><img src={arrowLeft} /></Link>
                 <div>
                      <p>{props.previous}</p>
                     <span>Previous Project</span>

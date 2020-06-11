@@ -2,7 +2,7 @@ import React from 'react'
 import PreviousNext from '../../../Components/PreviousNext'
 import styled from 'styled-components'
 
-import hero from './image-manage-hero.jpg'
+import hero from './landing-in-mars-hero.png'
 
 const StyledDetailHero = styled.div`
     width: 1110px;
@@ -69,7 +69,7 @@ function ProjectDetail(){
         </StyledDetailHero>
         <StyledMain>
             <article>
-                <h2>Manage</h2>
+                <h2>Landing in Mars</h2>
                 <p>
                     This project required me to build a fully responsive landing page to the designs 
                     provided. I used HTML5, along with CSS Grid and JavaScript for the areas that 
@@ -97,7 +97,10 @@ function ProjectDetail(){
                 </div>
             </section>
         </StyledMain>
-        < PreviousNext next="Best Exchange" nextProject="/projects/best-exchange" />
+        < PreviousNext next="Best Exchange" 
+                       nextProject="/projects/best-exchange" 
+                       previous="SM Dashboard"
+                       previousProject="/projects/sm-dashboard"/>
         </>
     )
 }
