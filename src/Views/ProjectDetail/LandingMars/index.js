@@ -5,8 +5,11 @@ import styled from 'styled-components'
 import hero from './landing-in-mars-hero.png'
 
 const StyledDetailHero = styled.div`
-    width: 1110px;
+    
     margin-bottom: 15vh;
+    img {
+        width: 80vw;
+    }
 `
 
 const StyledMain = styled.main`
@@ -71,11 +74,9 @@ function ProjectDetail(){
             <article>
                 <h2>Landing in Mars</h2>
                 <p>
-                    This project required me to build a fully responsive landing page to the designs 
-                    provided. I used HTML5, along with CSS Grid and JavaScript for the areas that 
-                    required interactivity, such as the testimonial slider.
+                    Este proyecto requirió un buen conocimiento de JavaScript puro - ECMAScript 6+ - y programación Orientada a Objetos para manipular el canvas, aplicar la lógica del juego y lograr la interactividad con el usuario. 
                 </p>
-                <span>Interaction Design / Front End Development</span>
+                <span>Video Game / Front End Development</span>
                 <span>HTML / CSS / JS</span>
                 <button>Visit Website</button>
             </article>
@@ -83,12 +84,7 @@ function ProjectDetail(){
             <section className="project-background">
                 <h3>Project Background</h3>
                     <p>
-                        This project was a front-end  challenge from Frontend Mentor. It’s a platform that 
-                        enables you to practice building websites to a design and project brief. Each challenge 
-                        includes mobile and desktop designs to show how the website should look at different 
-                        screen sizes. Creating these projects has helped me refine my workflow and solve 
-                        real-world coding problems. I’ve learned something new with each project, helping 
-                        me to improve and adapt my style.
+                        Este fue mi primer proyecto completo dentro del bootcamp de IronHack. El objetivo fue poner en práctica mi conocimiento de JavaScript, sin ayuda de librerias, frameworks u otros elementos externos. El juego recrea un entrenamiento en Marte en el que el objetivo es disparar a drones que se acercan a ti. Es un juego simple con solo una instruccion: destruye los drones que puedas. Para hacerlo dispones de cuatro  movimientos que llevas a cabo con teclas del teclado. Tiene la opción de contar los puntos de un segundo jugador y por medio de una comparación declarar a un ganador. 
                     </p>
                 <h3>Static Previews</h3>
                 <div className="static-previews-container">

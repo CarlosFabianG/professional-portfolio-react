@@ -5,8 +5,11 @@ import styled from 'styled-components'
 import hero from './best-exchange-hero.png'
 
 const StyledDetailHero = styled.div`
-    width: 1110px;
+    
     margin-bottom: 15vh;
+    img {
+        width: 80vw;
+    }
 `
 
 const StyledMain = styled.main`
@@ -69,26 +72,20 @@ function ProjectDetail(){
         </StyledDetailHero>
         <StyledMain>
             <article>
-                <h2>Manage</h2>
+                <h2>Best Exchange</h2>
                 <p>
-                    This project required me to build a fully responsive landing page to the designs 
-                    provided. I used HTML5, along with CSS Grid and JavaScript for the areas that 
-                    required interactivity, such as the testimonial slider.
+                    El presente proyecto es una SPA construída con la ayuda del framework progresivo Vue. En la parte de IU me apoyé en Tawilwind css, y API Rest para el consumo de datos.
                 </p>
                 <span>Interaction Design / Front End Development</span>
-                <span>HTML / CSS / JS</span>
+                <span>Vue / Tailwind CSS / API Rest</span>
                 <button>Visit Website</button>
             </article>
 
             <section className="project-background">
                 <h3>Project Background</h3>
                     <p>
-                        This project was a front-end  challenge from Frontend Mentor. It’s a platform that 
-                        enables you to practice building websites to a design and project brief. Each challenge 
-                        includes mobile and desktop designs to show how the website should look at different 
-                        screen sizes. Creating these projects has helped me refine my workflow and solve 
-                        real-world coding problems. I’ve learned something new with each project, helping 
-                        me to improve and adapt my style.
+                        Hice este proyecto con el objetivo de probar el framewrok Vue y conocer sus ventajas frente a otras opciones de desarrollo. La aplicación muestra los precios en tiempo real de las principales criptomonedas. Me ayudé de la API coincap para el consumo de datos. Para la parte de la gráfica use la librería Chart.js
+                        Me enfoque mucho en lograr una buena UI con la ayuda de loaders y botones interactivos. De igual manera probé un framework de CSS que esta en tendencia llamado Tailwind. La aplicacón es full responsive. 
                     </p>
                 <h3>Static Previews</h3>
                 <div className="static-previews-container">

@@ -5,8 +5,11 @@ import styled from 'styled-components'
 import hero from './best-movie-hero.png'
 
 const StyledDetailHero = styled.div`
-    width: 1110px;
+    
     margin-bottom: 15vh;
+    img {
+        width: 80vw;
+    }
 `
 
 const StyledMain = styled.main`
@@ -71,24 +74,18 @@ function ProjectDetail(){
             <article>
                 <h2>Best Movie</h2>
                 <p>
-                    This project required me to build a fully responsive landing page to the designs 
-                    provided. I used HTML5, along with CSS Grid and JavaScript for the areas that 
-                    required interactivity, such as the testimonial slider.
+                    Este proyecto es una Single Page Aplication construida con React y consumiendo la The Movie Data Base API. En la parte de estilos se usa Chakra UI.
                 </p>
                 <span>Interaction Design / Front End Development</span>
-                <span>HTML / CSS / JS</span>
+                <span>React / Chakra UI / API Rest /</span>
                 <a href="https://best-movie.netlify.app/"><button>Visit Website</button></a>
             </article>
 
             <section className="project-background">
                 <h3>Project Background</h3>
                     <p>
-                        This project was a front-end  challenge from Frontend Mentor. It’s a platform that 
-                        enables you to practice building websites to a design and project brief. Each challenge 
-                        includes mobile and desktop designs to show how the website should look at different 
-                        screen sizes. Creating these projects has helped me refine my workflow and solve 
-                        real-world coding problems. I’ve learned something new with each project, helping 
-                        me to improve and adapt my style.
+                        Best Movie app fue una de las primeras SPAs que contruí con React. Soy un apasionado del cine y quería hacer un proyecto relacionado a esta industria. La aplicación muestra películas por género. El detalle de cada película como presupuesto, año de lanzamiento, rating, sinopsis, trailer y películas que también te pueden interesar. 
+                        Diseñar y construir esta aplicación me ayudó a lograr un entendimiento más profundo de React y sus Life Cycle Methods, React Router Dom, y, el consumo de datos de una API de terceros.
                     </p>
                 <h3>Static Previews</h3>
                 <div className="static-previews-container">

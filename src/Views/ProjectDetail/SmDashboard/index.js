@@ -5,8 +5,11 @@ import styled from 'styled-components'
 import hero from './image-manage-hero.jpg'
 
 const StyledDetailHero = styled.div`
-    width: 1110px;
+    
     margin-bottom: 15vh;
+    img {
+        width: 80vw;
+    }
 `
 
 const StyledMain = styled.main`
