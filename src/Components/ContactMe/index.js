@@ -18,6 +18,13 @@ const StyledContactMe = styled.section`
         align-items: center;
         font-size: 40px;
         font-family: 'Ibarra Real Nova', serif;
+        padding-right: 20px;
+    }
+    .grid-item-2 {
+        .border {
+            height: 150px;
+            border-bottom: solid rgb(234, 234, 235) .5px;
+        }
     }
     .grid-item-3 {
         display: flex;
@@ -42,9 +49,12 @@ function ContactMe(){
         <>
         <StyledContactMe>
             <div className="grid-item-1">
-                <h3>Interesado en hacer un proyecto?</h3>
+                <h3>¿Tienes un proyecto en mente?</h3>
             </div>
-            <div className="grid-item-2"></div>
+            <div className="grid-item-2">
+                <div></div>
+                <div className="border"></div>
+            </div>
             <div className="grid-item-3">
                 <Link to={'/contact'}><button>Contáctame</button></Link>
             </div>

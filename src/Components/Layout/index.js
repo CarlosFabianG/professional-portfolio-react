@@ -8,7 +8,11 @@ const Wrapper = styled.div`
 padding: 0 10vw;
 padding-bottom: 8vh;
 background: rgb(250, 250, 250);
-overflow: "auto"
+
+
+@media screen and (min-width: 376px) and (max-width:1024px){
+  padding: 0 4vw;
+}
 `
 
 

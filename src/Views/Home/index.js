@@ -2,12 +2,13 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import heroImage from './image-homepage-hero.jpg'
+import heroImageTablet from './Tablet/image-homepage-hero.jpg'
 import imageProfile from './carlos-fabian-profile.JPG'
 import ContactMe from '../../Components/ContactMe'
 
 const StyledHeader = styled.header`
     min-height: 600px;
-    min-width: 900px;
+    min-width: 550px;
     background-image: url(${heroImage});
     background-repeat: no-repeat;
     background-size: contain;
@@ -21,6 +22,7 @@ const StyledHeader = styled.header`
         flex-direction: column;
         justify-content: space-between;
         padding-top: 40px;
+       
         div {
             width: 390px;
             height: 200px;
@@ -49,6 +51,21 @@ const StyledHeader = styled.header`
         font-family: 'Public Sans', sans-serif;
         cursor: pointer;
     }
+    @media screen and (max-width: 768px){
+        height: 600px;
+        background-image: url(${heroImageTablet});
+        .hero-text{
+            width: 68vw;
+            height: 278px;
+            border: solid red 1px;
+            div {
+                width: 458px;
+            }
+            h3 {
+                font-size: 40px;
+            }
+        }      
+}
 `
 
 const StyledAbout = styled.section`
@@ -90,6 +107,11 @@ const StyledAbout = styled.section`
         letter-spacing: .5px;
         text-transform: uppercase;
         cursor: pointer;
+    }
+    @media screen and (max-width: 768px){
+        img {
+            width: 40vw;
+        }
     }
 `
 

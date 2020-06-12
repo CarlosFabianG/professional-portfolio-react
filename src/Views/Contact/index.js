@@ -83,12 +83,11 @@ function Contact(){
       
             <article>
                 <div class="text">
-                <p>I’d love to hear about what you’re working on and how I could help. I’m currently 
-                looking for a new role and am open to a wide range of opportunities. My preference 
-                would be to find a position in a company in London. But I’m also happy to hear about 
-                opportunites that don’t fit that description. I’m a hard-working and positive person 
-                who will always approach each task with a sense of purpose and attention to detail. 
-                Please do feel free to check out my online profiles below and get in touch using the form.</p>
+                <p> Actualmente, 
+                estoy buscando colaborar en un proyecto desafiante en una Start-up con una misión poderosa ó en alguna agencia de desarrollo. 
+                Puedo trabajar de manera remota ó presencial, teniendo la disponibilidad para cambiar de residencia si el proyecto lo requiere. 
+                Me apasiona descubrir y aprender nuevas tecnologías. Y, más importante colaborar con gente talentosa y apasionada.  
+                Si te interesa colaborar en algún proyecto puedes ponerte en contacto conmigo en la siguiente forma.</p>
                 <div class="icons">
                     <a href="https://github.com/CarlosFabianG">
                     <img src={github} />
