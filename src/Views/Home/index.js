@@ -57,7 +57,6 @@ const StyledHeader = styled.header`
         .hero-text{
             width: 68vw;
             height: 278px;
-            border: solid red 1px;
             div {
                 width: 458px;
             }

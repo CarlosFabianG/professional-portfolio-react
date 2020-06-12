@@ -10,6 +10,11 @@ const StyledDetailHero = styled.div`
     img {
         width: 80vw;
     }
+    @media screen and (max-width: 768px){
+        img {
+            width: 92vw;
+        }  
+    }
 `
 
 const StyledMain = styled.main`
