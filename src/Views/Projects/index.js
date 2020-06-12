@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
-import manage from './desktop-design-dark.jpg'
+import geekBlogImg from './preview-geek-blog.png'
 import bestExchangeImg from './image-best-exchange1.png'
 import landingMarsImg from './image-landing-mars.png'
 import bestMovieImg from './image-best-movie.png'
@@ -87,13 +87,12 @@ function Projects(){
         <StyledMain class="portfolio-layout">
 
             <section class="section-portfolio-odd">
-                <img src={manage} alt="manage-image"/>
+                <img src={geekBlogImg} alt="manage-image"/>
                 <article>
-                    <h3>Manage</h3>
+                    <h3>Geek Blog</h3>
                     <div class="text">
-                        This project required me to build a fully responsive landing page to the designs provided. 
-                        I used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, 
-                        such as the testimonial slider.
+                        Blog estilo geek construido siguiendo metodología BEM. 
+                        Se usa HTML5 semántico, CSS Grid, FlexBox y técnicas de responsive design. 
                     </div>
                     <Link to={'/projects/sm-dashboard'}><button>Ver proyecto</button></Link>
                 </article>
@@ -103,7 +102,7 @@ function Projects(){
                 <article>
                     <h3>Landing in Mars</h3>
                     <div class="text">
-                        Videojuego tipo shooting en donde puse en práctica mis habilidades con JavaScript puro, especialmente con programación orientada a objetos POO.
+                        Videojuego tipo shooting en donde puse en práctica mis habilidades con JavaScript puro ECMAScript6+ y programación orientada a objetos POO.
                     </div>
                     <Link to={'/projects/landing-in-mars'}><button>Ver proyecto</button></Link>
                 </article>

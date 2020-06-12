@@ -14,6 +14,7 @@ const StyledDetailHero = styled.div`
 
 const StyledMain = styled.main`
 display: flex;
+color: #33323D;
 article {
     height: 460px;
     border-top: solid rgb(234, 234, 235) 1px;

@@ -51,7 +51,7 @@ return(
         <StyledFooter>
             <div className="logo-links">
                 <NavLink to={'/'}><img src={logo} alt="logo"/></NavLink>
-                <NavLink to={'/'}><a>Home</a></NavLink>
+                <NavLink to={'/'}><a>Inicio</a></NavLink>
                 <NavLink to={'/projects'}><a>Portfolio</a></NavLink>
                 <NavLink to={'/contact'}><a>Contacto</a></NavLink>
             </div>

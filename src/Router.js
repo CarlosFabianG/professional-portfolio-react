@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
-import Layout from './Components/Layout'
+import {Layout} from './Components/Layout'
 import SmDashboard from './Views/ProjectDetail/SmDashboard';
 import LandingMars from './Views/ProjectDetail/LandingMars'
 import BestExchange from './Views/ProjectDetail/BestExchange'

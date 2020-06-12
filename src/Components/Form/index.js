@@ -40,16 +40,16 @@ function Form(){
     return(
         <>
         <StyledForm>
-          <label>Name</label>
-          <input className="input-medium" placeholder="Jane Appleseed" />
+          <label>Nombre</label>
+          <input className="input-medium" placeholder="Elon Musk" />
   
-          <label>Email Address</label>
+          <label>Email</label>
           <input className="input-medium" placeholder="email@example.com" />
   
-          <label>Message</label>
-          <input className="input-large" placeholder="How can I help?" />
+          <label>Mensaje</label>
+          <input className="input-large" placeholder="¿Cómo te puedo ayudar?" />
   
-          <button>Send Message</button>
+          <button>Envíar Mensaje</button>
         </StyledForm>
         </>
     )

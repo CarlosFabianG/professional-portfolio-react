@@ -32,16 +32,22 @@ const StyledHeader = styled.header`
             font-size: 45px;
             font-family: 'Ibarra Real Nova', serif;
             line-height: 1;
+            color: #33323D;
+            span {
+                font-size: 55px;
+            }
         }
     }
     button {
         height: 48px;
         width: 200px;
-        background: var(--dark-blue);
+        background: rgb(32, 58, 76);
         color: white;
         font-size: 12px;
         letter-spacing: .5px;
         border: 0;
+        font-family: 'Public Sans', sans-serif;
+        cursor: pointer;
     }
 `
 
@@ -93,12 +99,13 @@ function Home(){
         <StyledHeader>
             <div class="hero-text">
                 <div>
-                    <h3>Hola, Soy Carlos Fabián y me apasiona el desarrollo de software</h3>
+                    <h3>Hola, soy Carlos Fabián, desarrollador <br/><span>WEB</span></h3>
                 </div>
-                <button>SOBRE MÍ</button>
+                <a href="#sobreMi"><button>SOBRE MÍ</button></a>
             </div>
         </StyledHeader>
 
+        
         <StyledAbout>
             <img src={imageProfile} alt="hero-image"/>
             <article>
@@ -108,6 +115,7 @@ function Home(){
                 </div>
                 <Link to={'/projects'}><button>Mis proyectos</button></Link>
             </article>
+            <a name="sobreMi"></a>
         </StyledAbout>
         < ContactMe />
         </>

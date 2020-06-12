@@ -39,7 +39,7 @@ function NavBar(){
                 <img src={logo}/>
             </Link>
             <div className="menu">
-                <Link to={'/'}><a>Home</a></Link>
+                <Link to={'/'}><a>Inicio</a></Link>
                 <NavLink to={'/projects'}><span>Portfolio</span></NavLink>
                 <NavLink to={'/contact'}><span>Contacto</span></NavLink>
             </div>

@@ -2,7 +2,7 @@ import React from 'react'
 import PreviousNext from '../../../Components/PreviousNext'
 import styled from 'styled-components'
 
-import hero from './image-manage-hero.jpg'
+import hero from './Home.png'
 
 const StyledDetailHero = styled.div`
     
@@ -26,6 +26,7 @@ article {
         font-size: 40px;
         margin-bottom: 5px;
         margin-top: 0;
+        color: #33323D;
     }
     p {
         width: 347px;
@@ -48,6 +49,7 @@ article {
         letter-spacing: 1px;
         margin-top: 10px;
         text-transform: uppercase;
+        cursor: pointer;
     }
 }
 .project-background {
@@ -72,26 +74,20 @@ function ProjectDetail(){
         </StyledDetailHero>
         <StyledMain>
             <article>
-                <h2>Manage</h2>
+                <h2>Blog Geek</h2>
                 <p>
-                    This project required me to build a fully responsive landing page to the designs 
-                    provided. I used HTML5, along with CSS Grid and JavaScript for the areas that 
-                    required interactivity, such as the testimonial slider.
-                </p>
+                    Este blog requirió HTML semántico, CSS moderno con técnicas como FlexBox, Grid layout y siguiendo la metodología BEM para el nombramiento de clases-selectores y estructura general del contenido. La página es responsiva. 
+                </p>  
                 <span>Interaction Design / Front End Development</span>
                 <span>HTML / CSS / JS</span>
-                <a href="#"><button>Visit Website</button></a>
+                <a href="https://geek-blog.netlify.app"><button>Visit Website</button></a>
             </article>
 
             <section className="project-background">
                 <h3>Project Background</h3>
                     <p>
-                        This project was a front-end  challenge from Frontend Mentor. It’s a platform that 
-                        enables you to practice building websites to a design and project brief. Each challenge 
-                        includes mobile and desktop designs to show how the website should look at different 
-                        screen sizes. Creating these projects has helped me refine my workflow and solve 
-                        real-world coding problems. I’ve learned something new with each project, helping 
-                        me to improve and adapt my style.
+                        Este proyecto es un blog con estilo geek. Cuenta con distintas páginas y secciones. 
+                        El objetivo principal de este proyecto fue fortalecer mis habilidades en maquetación y construcción de sitios estáticos. Y, en específico poner en práctica mis conocimientos de CSS Grid Layout y de la metodología BEM. El diseño es responsivo haciendo uso de medidas relativas, FlexBox y media queries.
                     </p>
                 <h3>Static Previews</h3>
                 <div className="static-previews-container">

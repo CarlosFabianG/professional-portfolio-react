@@ -27,6 +27,7 @@ article {
         font-size: 40px;
         margin-bottom: 5px;
         margin-top: 0;
+        color: #33323D;
     }
     p {
         width: 347px;
@@ -88,7 +89,7 @@ function ProjectDetail(){
             <section className="project-background">
                 <h3>Project Background</h3>
                     <p>
-                        Hice este proyecto con el objetivo de probar el framewrok Vue y conocer sus ventajas frente a otras opciones de desarrollo. La aplicación muestra los precios en tiempo real de las principales criptomonedas. Me ayudé de la API coincap para el consumo de datos. Para la parte de la gráfica use la librería Chart.js
+                        Hice este proyecto con el objetivo de probar el framewrok Vue y conocer sus ventajas frente a otras opciones de desarrollo. La aplicación muestra los precios en tiempo real de las principales criptomonedas en el mercado. Me ayudé de la API coincap para el consumo de datos. Para gráficar el comportamiento de los precios en el tiempo use la librería Chart.js.
                         Me enfoque mucho en lograr una buena UI con la ayuda de loaders y botones interactivos. De igual manera probé un framework de CSS que esta en tendencia llamado Tailwind. La aplicacón es full responsive. 
                     </p>
                 <h3>Static Previews</h3>

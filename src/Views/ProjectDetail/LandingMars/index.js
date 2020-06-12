@@ -14,6 +14,7 @@ const StyledDetailHero = styled.div`
 
 const StyledMain = styled.main`
 display: flex;
+color: #33323D;
 article {
     height: 460px;
     border-top: solid rgb(234, 234, 235) 1px;
@@ -26,6 +27,7 @@ article {
         font-size: 40px;
         margin-bottom: 5px;
         margin-top: 0;
+        color: #33323D;
     }
     p {
         width: 347px;
@@ -54,6 +56,7 @@ article {
 .project-background {
     width: 635px;
     margin-left: 10vw;
+    color: #33323D;
     p {
         line-height: 2;
         opacity: 80%;
