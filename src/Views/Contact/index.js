@@ -48,6 +48,17 @@ article {
     justify-content: flex-end;
     width: 925px;
 }
+@media screen and (max-width: 768px){
+    display: flex;
+    flex-direction: column;
+    .title {
+        padding-bottom: 30px;
+    }
+    article {
+        align-items: flex-start;
+        width: 90vw;
+    }
+}
 `
 
 const StyledContact2 = styled.section`
@@ -70,6 +81,19 @@ const StyledContact2 = styled.section`
         display: flex;
         justify-content: flex-end;
         width: 925px;
+    }
+    @media screen and (max-width: 768px){
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0;
+        padding-bottom: 15vh;
+        .title {
+            padding-bottom: 35px;
+        }
+        .form {
+            justify-content: flex-start;
+            width: 90vw;
+        }
     }
 `
 
