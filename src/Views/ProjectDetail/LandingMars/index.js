@@ -1,6 +1,7 @@
 import React from 'react'
 import PreviousNext from '../../../Components/PreviousNext'
 import styled from 'styled-components'
+import ContactMe from '../../../Components/ContactMe'
 
 import hero from './landing-in-mars-hero.png'
 
@@ -106,6 +107,7 @@ function ProjectDetail(){
                        nextProject="/projects/best-exchange" 
                        previous="SM Dashboard"
                        previousProject="/projects/sm-dashboard"/>
+        < ContactMe />
         </>
     )
 }

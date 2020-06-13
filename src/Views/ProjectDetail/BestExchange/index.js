@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import PreviousNext from '../../../Components/PreviousNext'
 import styled from 'styled-components'
-
+import ContactMe from '../../../Components/ContactMe'
 import hero from './best-exchange-hero.png'
 
 const StyledDetailHero = styled.div`
@@ -108,6 +108,7 @@ function ProjectDetail(){
                        nextProject='/projects/best-movie'
                        previous="Landing in Mars"
                        previousProject="/projects/landing-in-mars"/>
+        < ContactMe />
         </>
     )
 }

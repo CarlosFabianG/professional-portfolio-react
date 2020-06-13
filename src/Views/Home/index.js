@@ -51,6 +51,13 @@ const StyledHeader = styled.header`
         font-family: 'Public Sans', sans-serif;
         cursor: pointer;
     }
+    @media screen and (max-width: 1290px) and (min-width: 1025px){
+        .hero-text {
+            width: 390px;
+            height: 220px;
+            margin-bottom: 7vh;
+        }
+    }
     @media screen and (max-width: 768px){
         height: 600px;
         background-image: url(${heroImageTablet});
@@ -106,6 +113,10 @@ const StyledAbout = styled.section`
         letter-spacing: .5px;
         text-transform: uppercase;
         cursor: pointer;
+    }
+
+    @media screen and (max-width: 1290px) and (min-width: 1025px){
+        margin-top: 120px;
     }
     @media screen and (max-width: 768px){
         img {

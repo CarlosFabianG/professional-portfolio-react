@@ -1,5 +1,6 @@
 import React from 'react'
 import PreviousNext from '../../../Components/PreviousNext'
+import ContactMe from '../../../Components/ContactMe'
 import styled from 'styled-components'
 
 import hero from './Home.png'
@@ -102,6 +103,7 @@ function ProjectDetail(){
             </section>
         </StyledMain>
         < PreviousNext next="Landing in Mars" nextProject="/projects/landing-in-mars"/>
+        < ContactMe />
         </>
     )
 }
