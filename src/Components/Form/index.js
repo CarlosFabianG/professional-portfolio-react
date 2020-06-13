@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component } from 'react'
 
 import styled from 'styled-components'
 
@@ -34,25 +34,63 @@ const StyledForm = styled.form`
         letter-spacing: 2px;
         text-transform: uppercase;
     }
+    p {
+        color: rgb(95, 180, 162);
+    }
 `
 
-function Form(){
-    return(
-        <>
-        <StyledForm>
+class Form extends Component{
+
+    constructor(props) {
+        super(props);
+        this.submitForm = this.submitForm.bind(this);
+        this.state = {
+          status: ""
+        };
+      }
+
+    submitForm(e) {
+        e.preventDefault();
+        const form = e.target;
+        const data = new FormData(form);
+        const xhr = new XMLHttpRequest();
+        xhr.open(form.method, form.action);
+        xhr.setRequestHeader("Accept", "application/json");
+        xhr.onreadystatechange = () => {
+          if (xhr.readyState !== XMLHttpRequest.DONE) return;
+          if (xhr.status === 200) {
+            form.reset();
+            this.setState({ status: "SUCCESS" });
+          } else {
+            this.setState({ status: "ERROR" });
+          }
+        };
+        xhr.send(data);
+      }
+
+    render(){
+        const { status } = this.state;
+        return(
+            <>
+        <StyledForm onSubmit={this.submitForm}
+                    action="https://formspree.io/mgenynay"
+                     method="POST">
           <label>Nombre</label>
           <input className="input-medium" placeholder="Elon Musk" />
   
           <label>Email</label>
-          <input className="input-medium" placeholder="email@example.com" />
+          <input className="input-medium" placeholder="email@example.com" type="email" name="email" />
   
           <label>Mensaje</label>
-          <input className="input-large" placeholder="¿Cómo te puedo ayudar?" />
+          <input className="input-large" placeholder="¿Cómo te puedo ayudar?" type="text" name="message"/>
   
-          <button>Envíar Mensaje</button>
+         
+            {status === "SUCCESS" ? <p>¡Mensaje Enviado!</p> : <button>Envíar Mensaje</button>}
+            {status === "ERROR" && <p>Ooops! Parece que hay un error.</p>}
         </StyledForm>
         </>
-    )
+            )
+    }
 }
 
 export default Form
