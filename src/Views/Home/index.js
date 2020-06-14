@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import heroImage from './image-homepage-hero.jpg'
 import heroImageTablet from './Tablet/image-homepage-hero.jpg'
 import imageProfile from './carlos-fabian-profile.JPG'
+import mobileHeroImg from './Mobile/image-homepage-hero.jpg'
 import downArrows from './down-arrows.svg'
 import ContactMe from '../../Components/ContactMe'
 
@@ -79,6 +80,10 @@ const StyledHeader = styled.header`
             }
         }      
 }
+    @media screen and (max-width: 375px){
+        background-image: url(${mobileHeroImg});
+        width: 50vw;
+    }
 `
 
 const StyledAbout = styled.section`

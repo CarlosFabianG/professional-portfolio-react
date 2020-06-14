@@ -15,12 +15,16 @@ height: 80px;
 display: flex;
 justify-content: space-between;
 align-items: center;
+width: 100vw;
+position: absolute;
+flex-wrap: wrap;
 .logo-links {
     display: flex;
     margin-left: 10vw;
     padding-top: 15px;
     padding-right: 15px;
     align-items: center;
+    flex-wrap: wrap;
     img {
         color: white;
         padding-right: 40px;
@@ -46,6 +50,25 @@ align-items: center;
  @media screen and (max-width: 768px) {
      .icons {
         display: flex;
+     }
+ }
+ @media screen and (max-width: 375px){
+     height: 354px;
+     flex-direction: column;
+     .logo-links {
+         padding-top: 50px;
+         flex-direction: column;
+         a {
+            margin-bottom: 25px;
+            img {
+                margin-bottom: 10px;
+                padding-right: 25px;
+            }
+         }
+     }
+     .icons {
+        margin: 0;
+        padding-bottom: 70px;
      }
  }
 `
