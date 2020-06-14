@@ -87,12 +87,12 @@ function Projects(){
         <StyledMain class="portfolio-layout">
 
             <section class="section-portfolio-odd">
-                <img src={geekBlogImg} alt="manage-image"/>
+                <img src={geekBlogImg} alt=""/>
                 <article>
                     <h3>Geek Blog</h3>
                     <div class="text">
                         Blog estilo geek construido siguiendo metodología BEM. 
-                        Se usa HTML5 semántico, CSS Grid, FlexBox y técnicas de responsive design. 
+                        Se usa HTML5 semántico, CSS Grid, FlexBox y técnicas de responsive design para adaptar el diseño a diferentes dispositivos. 
                     </div>
                     <Link to={'/projects/sm-dashboard'}><button>Ver proyecto</button></Link>
                 </article>
@@ -106,11 +106,11 @@ function Projects(){
                     </div>
                     <Link to={'/projects/landing-in-mars'}><button>Ver proyecto</button></Link>
                 </article>
-                <img src={landingMarsImg} alt="landing-mars-image"/>
+                <img src={landingMarsImg} alt="landing-mars"/>
             </section>
 
             <section class="section-portfolio-odd">
-                <img src={bestExchangeImg} alt="best-exchange-image"/>
+                <img src={bestExchangeImg} alt="best-exchange"/>
                 <article>
                     <h3>Best Exchange</h3>
                     <div class="text">
@@ -129,7 +129,7 @@ function Projects(){
                     </div>
                     <Link to={'/projects/best-movie'}><button>Ver proyecto</button></Link>
                 </article>
-                <img src={bestMovieImg} alt="best-movie-image"/>
+                <img src={bestMovieImg} alt="best-movie"/>
             </section>
             < ContactMe />
         </StyledMain>

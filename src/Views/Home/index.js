@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import heroImage from './image-homepage-hero.jpg'
 import heroImageTablet from './Tablet/image-homepage-hero.jpg'
 import imageProfile from './carlos-fabian-profile.JPG'
+import downArrows from './down-arrows.svg'
 import ContactMe from '../../Components/ContactMe'
 
 const StyledHeader = styled.header`
@@ -40,6 +41,9 @@ const StyledHeader = styled.header`
             }
         }
     }
+    a {
+        width: 200px;
+    }
     button {
         height: 48px;
         width: 200px;
@@ -50,12 +54,15 @@ const StyledHeader = styled.header`
         border: 0;
         font-family: 'Public Sans', sans-serif;
         cursor: pointer;
+        img{
+            margin-right: 8px;
+        }
     }
     @media screen and (max-width: 1290px) and (min-width: 1025px){
         .hero-text {
             width: 390px;
             height: 220px;
-            margin-bottom: 7vh;
+            margin-bottom: 10vh;
         }
     }
     @media screen and (max-width: 768px){
@@ -88,6 +95,9 @@ const StyledAbout = styled.section`
         flex-direction: column;
         justify-content: center;
         margin-left: 8vw;
+        a {
+            width: 200px;
+        }
     }
     h2 {
         font-size: 40px;
@@ -114,7 +124,7 @@ const StyledAbout = styled.section`
         text-transform: uppercase;
         cursor: pointer;
     }
-
+    
     @media screen and (max-width: 1290px) and (min-width: 1025px){
         margin-top: 120px;
     }
@@ -133,17 +143,17 @@ function Home(){
                 <div>
                     <h3>Hola, soy Carlos Fabián, desarrollador <br/><span>WEB</span></h3>
                 </div>
-                <a href="#sobreMi"><button>SOBRE MÍ</button></a>
+                <a href="#sobreMi"><button><img src={downArrows} alt=""/>SOBRE MÍ</button></a>
             </div>
         </StyledHeader>
 
         
         <StyledAbout>
-            <img src={imageProfile} alt="hero-image"/>
+            <img src={imageProfile} alt="me"/>
             <article>
                 <h2>Sobre mí</h2>
                 <div> 
-                Soy un front-end developer buscando una posición en un equipo épico en donde pueda escribir código de calidad. Me enfoco en HTML5 semántico, CSS con metodologías como BEM y pre procesadores como SASS. JavaScript con las más recientes implementaciones de EcmaScript. Mi framework favorito para desarrollo frontend es React pero puedo adaptarme a cualquier tecnología. Me gusta trabajar en equipos de alta desempeño. 
+                Soy front-end developer con el objetivo de construir soluciones tecnológicas que ayuden a las personas a mejorar sus vidas. Mis habilidades son HTML5 semántico, CSS -Flexbox, Grid layout, BEM, SASS. JavaScript EcmaScript 6+. Git y github para control de versiones y trabajo colaborativo. Mi framework favorito para desarrollo frontend es React pero puedo adaptarme a cualquier tecnología. Mi principal súper poder es una pasión genuina por el aprendizaje continuo. 
                 </div>
                 <Link to={'/projects'}><button>Mis proyectos</button></Link>
             </article>

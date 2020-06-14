@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import PreviousNext from '../../../Components/PreviousNext'
 import styled from 'styled-components'
 import ContactMe from '../../../Components/ContactMe'
@@ -57,6 +56,9 @@ article {
         text-transform: uppercase;
         cursor: pointer;
     }
+    a {
+        width: 180px;
+    }
 }
 .project-background {
     width: 635px;
@@ -76,7 +78,7 @@ function ProjectDetail(){
     return(
         <>
         <StyledDetailHero>
-            <img src={hero}/>
+            <img src={hero}  alt=""/>
         </StyledDetailHero>
         <StyledMain>
             <article>
@@ -86,16 +88,16 @@ function ProjectDetail(){
                 </p>
                 <span>Interaction Design / Front End Development</span>
                 <span>Vue / Tailwind CSS / API Rest</span>
-                <a href="https://best-exchange.netlify.app/" target="_blank">
-                    <button>Visit Website</button>
+                <a href="https://best-exchange.netlify.app/" target="_blank" rel="noopener noreferrer">
+                    <button>Visitar Website</button>
                 </a>
             </article>
 
             <section className="project-background">
                 <h3>Project Background</h3>
                     <p>
-                        Hice este proyecto con el objetivo de probar el framewrok Vue y conocer sus ventajas frente a otras opciones de desarrollo. La aplicación muestra los precios en tiempo real de las principales criptomonedas en el mercado. Me ayudé de la API coincap para el consumo de datos. Para gráficar el comportamiento de los precios en el tiempo use la librería Chart.js.
-                        Me enfoque mucho en lograr una buena UI con la ayuda de loaders y botones interactivos. De igual manera probé un framework de CSS que esta en tendencia llamado Tailwind. La aplicacón es full responsive. 
+                        Hice este proyecto con el objetivo de probar el framewrok Vue y conocer sus ventajas frente a otras opciones de desarrollo. La aplicación muestra los precios en tiempo real de las principales criptomonedas en el mercado. Me ayudé de la API coincap para el consumo de datos. Para gráficar el comportamiento de los precios en el tiempo usé la librería Chart.js.
+                        Me enfoque mucho en lograr una buena UI con la ayuda de loaders y botones interactivos. De igual manera probé un framework de CSS que esta en tendencia llamado Tailwind. La aplicación es full responsive. 
                     </p>
                 <h3>Static Previews</h3>
                 <div className="static-previews-container">

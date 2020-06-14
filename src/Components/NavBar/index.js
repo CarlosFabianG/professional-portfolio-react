@@ -36,11 +36,11 @@ function NavBar(){
         <>
         <StyledNavBar>
             <Link to={'/'}>
-                <img src={logo}/>
+                <img src={logo} alt="logo"/>
             </Link>
             <div className="menu">
-                <Link to={'/'}><a>Inicio</a></Link>
-                <NavLink to={'/projects'}><span>Portfolio</span></NavLink>
+                <Link to={'/'}><span>Inicio</span></Link>
+                <NavLink to={'/projects'}><span>Portafolio</span></NavLink>
                 <NavLink to={'/contact'}><span>Contacto</span></NavLink>
             </div>
         </StyledNavBar>

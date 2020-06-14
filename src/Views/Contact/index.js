@@ -102,25 +102,24 @@ function Contact(){
         <>
         <StyledContact1>
             <div class="title">
-                <h3>Get in Touch</h3>
+                <h3>¿Creamos algo juntos?</h3>
             </div>
       
             <article>
                 <div class="text">
-                <p> Actualmente, 
-                estoy buscando colaborar en un proyecto desafiante en una Start-up con una misión poderosa ó en alguna agencia de desarrollo. 
-                Puedo trabajar de manera remota ó presencial, teniendo la disponibilidad para cambiar de residencia si el proyecto lo requiere. 
-                Me apasiona descubrir y aprender nuevas tecnologías. Y, más importante colaborar con gente talentosa y apasionada.  
-                Si te interesa colaborar en algún proyecto puedes ponerte en contacto conmigo en la siguiente forma.</p>
+                <p> 
+                Siempre estoy buscando conocer gente dentro de la comunidad Tech, asistir a eventos, conferencias, meetups y emprender nuevos retos.      
+                En este momento estoy abierto a oportunidades profesionales en una start-up con una misión poderosa y/o en una agencia de desarrollo con personas talentosas y apasionadas.  
+                Si tienes algún proyecto en mente, propuesta, invitación o colaboración envíame un mensaje para iniciar una conversación. Me encantará saber de ti.</p>
                 <div class="icons">
                     <a href="https://github.com/CarlosFabianG">
-                    <img src={github} />
+                    <img src={github} alt="github-icon"/>
                     </a>
                     <a href="https://twitter/Cfabian_blog">
-                    <img src={twitter} />
+                    <img src={twitter} alt="twitter-icon"/>
                     </a>
                     <a href="https://www.linkedin.com/in/carlosfabian/">
-                    <img src={linkedin} />
+                    <img src={linkedin} alt="linkedin-icon"/>
                     </a>
                 </div>
                 </div>
@@ -129,7 +128,7 @@ function Contact(){
 
     <StyledContact2>
       <div class="title">
-        <h3>Contáctame</h3>
+        <h3>Iniciemos una conversación</h3>
       </div>
 
       <div class="form">

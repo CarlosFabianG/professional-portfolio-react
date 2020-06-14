@@ -33,6 +33,7 @@ const StyledForm = styled.form`
         font-size: 12px;
         letter-spacing: 2px;
         text-transform: uppercase;
+        cursor: pointer;
     }
     p {
         color: rgb(95, 180, 162);

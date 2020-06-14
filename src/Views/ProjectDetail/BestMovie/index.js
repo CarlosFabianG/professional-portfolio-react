@@ -56,6 +56,9 @@ article {
         text-transform: uppercase;
         cursor: pointer;
     }
+    a {
+        width: 180px;
+    }
 }
 .project-background {
     width: 635px;
@@ -75,24 +78,24 @@ function ProjectDetail(){
     return(
         <>
         <StyledDetailHero>
-            <img src={hero}/>
+            <img src={hero} alt=""/>
         </StyledDetailHero>
         <StyledMain>
             <article>
                 <h2>Best Movie</h2>
                 <p>
-                    Este proyecto es una Single Page Aplication construida con React y consumiendo la The Movie Data Base API. En la parte de estilos se usa Chakra UI.
+                    Este proyecto es una Single Page Application construida con React y consume la The Movie Data Base API para obtener los datos de miles de películas. Para los estilos se usa Chakra UI.
                 </p>
                 <span>Interaction Design / Front End Development</span>
                 <span>React / Chakra UI / API Rest /</span>
-                <a href="https://best-movie.netlify.app/" target="_blank"><button>Visit Website</button></a>
+                <a href="https://best-movie.netlify.app/" target="_blank" rel="noopener noreferrer"><button>Visitar Website</button></a>
             </article>
 
             <section className="project-background">
                 <h3>Project Background</h3>
                     <p>
-                        Best Movie app fue una de las primeras SPAs que contruí con React. Soy un apasionado del cine y quería hacer un proyecto relacionado a esta industria. La aplicación muestra películas por género. El detalle de cada película como presupuesto, año de lanzamiento, rating, sinopsis, trailer y películas que también te pueden interesar. 
-                        Diseñar y construir esta aplicación me ayudó a lograr un entendimiento más profundo de React y sus Life Cycle Methods, React Router Dom, y, el consumo de datos de una API de terceros.
+                        Best Movie app fue una de las primeras aplicaciones que contruí con React. Soy un apasionado del cine y quería hacer un proyecto relacionado a esta industria. La aplicación muestra películas por género, detalles como presupuesto, año de lanzamiento, rating, sinopsis, trailer y películas relacionadas que también te pueden interesar. 
+                        Diseñar y construir esta aplicación me ayudó a lograr un entendimiento más profundo de React y sus Life Cycle Methods, React Router Dom, y, el consumo de datos de una API de terceros con REST.
                     </p>
                 <h3>Static Previews</h3>
                 <div className="static-previews-container">
@@ -101,7 +104,7 @@ function ProjectDetail(){
                 </div>
             </section>
         </StyledMain>
-        < PreviousNext next="SM Dashboard" 
+        < PreviousNext next="Blog Geek" 
                        nextProject={'/projects/sm-dashboard'}
                        previous="Best Exchange"
                        previousProject="/projects/landing-in-mars"/>

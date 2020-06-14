@@ -26,7 +26,7 @@ align-items: center;
         padding-right: 40px;
         height: 20px;
     }
-    a {
+    span,a {
         color: white;
         font-size: 12px;
         margin-right: 25px;
@@ -56,19 +56,19 @@ return(
         <StyledFooter>
             <div className="logo-links">
                 <NavLink to={'/'}><img src={logo} alt="logo"/></NavLink>
-                <NavLink to={'/'}><a>Inicio</a></NavLink>
-                <NavLink to={'/projects'}><a>Portfolio</a></NavLink>
-                <NavLink to={'/contact'}><a>Contacto</a></NavLink>
+                <NavLink to={'/'}><span>Inicio</span></NavLink>
+                <NavLink to={'/projects'}><span>Portafolio</span></NavLink>
+                <NavLink to={'/contact'}><span>Contacto</span></NavLink>
             </div>
             <div className="icons">
                 <a href="https://github.com/CarlosFabianG">
-                    <img src={githubIcon}/>
+                    <img src={githubIcon} alt="github-icon"/>
                 </a>
-                <a href="https://twitter/Cfabian_blog">
-                    <img src={twitterIcon}/>
+                <a href="https://twitter/Cfabian_blog" alt="twitter-icon">
+                    <img src={twitterIcon} alt="twitter-icon"/>
                 </a>
-                <a href="https://www.linkedin.com/in/carlosfabian/">
-                    <img src={linkedinIcon}/>
+                <a href="https://www.linkedin.com/in/carlosfabian/" alt="linkedin-icon">
+                    <img src={linkedinIcon} alt="linkedin-icon"/>
                 </a>
             </div>
         </StyledFooter>

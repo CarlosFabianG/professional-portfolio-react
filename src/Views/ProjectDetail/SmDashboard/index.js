@@ -57,6 +57,9 @@ article {
         text-transform: uppercase;
         cursor: pointer;
     }
+    a {
+        width: 180px;
+    }
 }
 .project-background {
     width: 635px;
@@ -76,7 +79,7 @@ function ProjectDetail(){
     return(
         <>
         <StyledDetailHero>
-            <img src={hero}/>
+            <img src={hero}  alt=""/>
         </StyledDetailHero>
         <StyledMain>
             <article>
@@ -86,7 +89,7 @@ function ProjectDetail(){
                 </p>  
                 <span>Interaction Design / Front End Development</span>
                 <span>HTML / CSS / JS</span>
-                <a href="https://geek-blog.netlify.app"><button>Visit Website</button></a>
+                <a href="https://geek-blog.netlify.app" target="_blank" rel="noopener noreferrer"><button>Visitar Website</button></a>
             </article>
 
             <section className="project-background">
