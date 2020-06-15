@@ -6,6 +6,7 @@ import styled from 'styled-components'
 
 const StyledNavBar = styled.nav`
     margin: 0 0 30px 0;
+    max-width: 1160px;
     padding-top: 30px;
     backgorund: rgb(250, 250, 250);
     display: flex;
