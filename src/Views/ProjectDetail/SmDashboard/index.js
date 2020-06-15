@@ -98,11 +98,7 @@ function ProjectDetail(){
                         Este proyecto es un blog con estilo geek. Cuenta con distintas páginas y secciones. 
                         El objetivo principal de este proyecto fue fortalecer mis habilidades en maquetación y construcción de sitios estáticos. Y, en específico poner en práctica mis conocimientos de CSS Grid Layout y de la metodología BEM. El diseño es responsivo haciendo uso de medidas relativas, FlexBox y media queries.
                     </p>
-                <h3>Static Previews</h3>
-                <div className="static-previews-container">
-                    <img src="images/detail/desktop/image-manage-preview-1.jpg" alt="static previews" />
-                    <img src="images/detail/desktop/image-manage-preview-2.jpg" alt="static previews" />
-                </div>
+                
             </section>
         </StyledMain>
         < PreviousNext next="Landing in Mars" nextProject="/projects/landing-in-mars"/>

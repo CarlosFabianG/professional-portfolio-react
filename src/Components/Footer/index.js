@@ -17,14 +17,12 @@ justify-content: space-between;
 align-items: center;
 width: 100vw;
 position: absolute;
-flex-wrap: wrap;
 .logo-links {
     display: flex;
     margin-left: 10vw;
     padding-top: 15px;
     padding-right: 15px;
     align-items: center;
-    flex-wrap: wrap;
     img {
         color: white;
         padding-right: 40px;

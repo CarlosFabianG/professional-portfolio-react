@@ -99,11 +99,7 @@ function ProjectDetail(){
                         Hice este proyecto con el objetivo de probar el framewrok Vue y conocer sus ventajas frente a otras opciones de desarrollo. La aplicación muestra los precios en tiempo real de las principales criptomonedas en el mercado. Me ayudé de la API coincap para el consumo de datos. Para gráficar el comportamiento de los precios en el tiempo usé la librería Chart.js.
                         Me enfoque mucho en lograr una buena UI con la ayuda de loaders y botones interactivos. De igual manera probé un framework de CSS que esta en tendencia llamado Tailwind. La aplicación es full responsive. 
                     </p>
-                <h3>Static Previews</h3>
-                <div className="static-previews-container">
-                    <img src="images/detail/desktop/image-manage-preview-1.jpg" alt="static previews" />
-                    <img src="images/detail/desktop/image-manage-preview-2.jpg" alt="static previews" />
-                </div>
+                
             </section>
         </StyledMain>
         < PreviousNext next="Best Movie" 

@@ -99,11 +99,7 @@ function ProjectDetail(){
                     <p>
                         Este fue mi primer proyecto completo dentro del bootcamp de IronHack. El objetivo fue poner en práctica mi conocimiento de JavaScript, sin ayuda de librerias, frameworks u otros elementos externos. El juego recrea un entrenamiento en Marte en el que el objetivo es disparar a drones que se acercan a ti. Es un juego simple con solo una instruccion: destruye los drones que puedas. Para hacerlo dispones de cuatro  movimientos que llevas a cabo con teclas del teclado. Tiene la opción de contar los puntos de un segundo jugador y por medio de una comparación declarar a un ganador. 
                     </p>
-                <h3>Static Previews</h3>
-                <div className="static-previews-container">
-                    <img src="images/detail/desktop/image-manage-preview-1.jpg" alt="static previews" />
-                    <img src="images/detail/desktop/image-manage-preview-2.jpg" alt="static previews" />
-                </div>
+                
             </section>
         </StyledMain>
         < PreviousNext next="Best Exchange" 

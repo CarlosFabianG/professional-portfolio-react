@@ -97,11 +97,7 @@ function ProjectDetail(){
                         Best Movie app fue una de las primeras aplicaciones que contruí con React. Soy un apasionado del cine y quería hacer un proyecto relacionado a esta industria. La aplicación muestra películas por género, detalles como presupuesto, año de lanzamiento, rating, sinopsis, trailer y películas relacionadas que también te pueden interesar. 
                         Diseñar y construir esta aplicación me ayudó a lograr un entendimiento más profundo de React y sus Life Cycle Methods, React Router Dom, y, el consumo de datos de una API de terceros con REST.
                     </p>
-                <h3>Static Previews</h3>
-                <div className="static-previews-container">
-                    <img src="images/detail/desktop/image-manage-preview-1.jpg" alt="static previews" />
-                    <img src="images/detail/desktop/image-manage-preview-2.jpg" alt="static previews" />
-                </div>
+               
             </section>
         </StyledMain>
         < PreviousNext next="Blog Geek" 
