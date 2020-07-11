@@ -100,10 +100,10 @@ function ProjectDetail(){
                
             </section>
         </StyledMain>
-        < PreviousNext next="Blog Geek" 
-                       nextProject={'/projects/sm-dashboard'}
+        < PreviousNext next="Manage" 
+                       nextProject={'/projects/manage'}
                        previous="Best Exchange"
-                       previousProject="/projects/landing-in-mars"/>
+                       previousProject="/projects/best-exchange"/>
         < ContactMe />
         </>
     )

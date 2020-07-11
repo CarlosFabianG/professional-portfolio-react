@@ -1,9 +1,9 @@
 import React from 'react'
 import PreviousNext from '../../../Components/PreviousNext'
-import ContactMe from '../../../Components/ContactMe'
 import styled from 'styled-components'
+import ContactMe from '../../../Components/ContactMe'
 
-import hero from './Home.png'
+import hero from './image-fylo-hero.jpg'
 
 const StyledDetailHero = styled.div`
     
@@ -20,6 +20,7 @@ const StyledDetailHero = styled.div`
 
 const StyledMain = styled.main`
 display: flex;
+color: #33323D;
 article {
     height: 460px;
     border-top: solid rgb(234, 234, 235) 1px;
@@ -64,6 +65,7 @@ article {
 .project-background {
     width: 635px;
     margin-left: 10vw;
+    color: #33323D;
     p {
         line-height: 2;
         opacity: 80%;
@@ -83,30 +85,30 @@ function ProjectDetail(){
         </StyledDetailHero>
         <StyledMain>
             <article>
-                <h2>Blog Geek</h2>
+                <h2>Fylo</h2>
                 <p>
-                    Este blog requirió HTML semántico, CSS moderno con técnicas como FlexBox, Grid layout y siguiendo la metodología BEM para el nombramiento de clases-selectores y estructura general del contenido. La página es responsiva. 
-                </p>  
-                <span>Interaction Design / Front End Development</span>
-                <span>HTML / CSS / JS</span>
-                <a href="https://geek-blog.netlify.app" target="_blank" rel="noopener noreferrer"><button>Visitar Website</button></a>
+                    Este proyecto requirió un buen conocimiento de maquetación en HTML5, CSS, SASS y técnicas de responsive design.
+                </p>
+                <span>Landing page / Front End Development</span>
+                <span>HTML / SCSS</span>
+                <a href="https://manage-landingpage-cf.netlify.app" target="_blank" rel="noopener noreferrer"><button>Visitar Website</button></a>
             </article>
 
             <section className="project-background">
                 <h3>Project Background</h3>
                     <p>
-                        Este proyecto es un blog con estilo geek. Cuenta con distintas páginas y secciones. 
-                        El objetivo principal de este proyecto fue fortalecer mis habilidades en maquetación y construcción de sitios estáticos. Y, en específico poner en práctica mis conocimientos de CSS Grid Layout y de la metodología BEM. El diseño es responsivo haciendo uso de medidas relativas, FlexBox y media queries.
+                        Fylo es una landing page que hice usando HTML5, SASS y unas gotas de JavaScript. 
+                        Durante el desarrollo se siguió la metodología BEM para nombrar selectores de CSS. Gracias a la ayuda del preprocesador de css SASS el código está modularizado por componente lo que facilita el mantenimiento y la escalabilidad. 
+                        De igual manera se siguió el principio de mobile first. 
                     </p>
                 
             </section>
         </StyledMain>
-        < PreviousNext 
-                       previous="Fylo"
-                       previousProject="/projects/fylo"
-                       next="Landing in Mars" 
-                       nextProject="/projects/landing-in-mars"/>
-        < ContactMe />
+        < PreviousNext next="Geek Blog" 
+                       nextProject="/projects/sm-dashboard" 
+                       previous="Manage"
+                       previousProject="/projects/manage"/>
+        <ContactMe />
         </>
     )
 }

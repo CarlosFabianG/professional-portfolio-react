@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
+import manageImg from './image-portfolio-manage.jpg'
+import fyloImg from './image-portfolio-fylo.jpg'
 import geekBlogImg from './preview-geek-blog.png'
 import bestExchangeImg from './image-best-exchange1.png'
 import landingMarsImg from './image-landing-mars.png'
@@ -85,6 +87,29 @@ img {
 function Projects(){
     return(
         <StyledMain class="portfolio-layout">
+
+            <section class="section-portfolio-odd">
+                <img src={manageImg} alt=""/>
+                <article>
+                    <h3>Manage</h3>
+                    <div class="text">
+                        Landing page construída siguiendo metodología BEM. 
+                        Se usa HTML5 semántico y SASS como pre procesador de CSS. Full responsive.
+                    </div>
+                    <Link to={'/projects/manage'}><button>Ver proyecto</button></Link>
+                </article>
+            </section>
+
+            <section class="section-portfolio-evenly">
+                <article>
+                    <h3>Fylo</h3>
+                    <div class="text">
+                        Landing page contruída siguiendo metodología BEM. HTML5 y SASS como preprocesador de CSS. Full responsive.
+                    </div>
+                    <Link to={'/projects/fylo'}><button>Ver proyecto</button></Link>
+                </article>
+                <img src={fyloImg} alt="fylo-landing-page"/>
+            </section>
 
             <section class="section-portfolio-odd">
                 <img src={geekBlogImg} alt=""/>

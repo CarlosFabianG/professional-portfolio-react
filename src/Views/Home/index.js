@@ -13,7 +13,7 @@ const StyledHeader = styled.header`
     min-width: 550px;
     background-image: url(${heroImage});
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     display: flex;
     align-items: flex-end;
     .hero-text {
@@ -144,7 +144,7 @@ function Home(){
     return(
         <>
         <StyledHeader>
-            <div class="hero-text">
+            <div className="hero-text">
                 <div>
                     <h3>Hola, soy Carlos Fabián, desarrollador <br/><span>WEB</span></h3>
                 </div>
