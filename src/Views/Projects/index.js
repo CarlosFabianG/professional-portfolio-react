@@ -104,7 +104,7 @@ function Projects(){
                 <article>
                     <h3>Fylo</h3>
                     <div class="text">
-                        Landing page contruída siguiendo metodología BEM. HTML5 y SASS como preprocesador de CSS. Full responsive.
+                        Landing page construída siguiendo metodología BEM. HTML5 y SASS como preprocesador de CSS. Full responsive.
                     </div>
                     <Link to={'/projects/fylo'}><button>Ver proyecto</button></Link>
                 </article>

@@ -104,7 +104,7 @@ function ProjectDetail(){
         </StyledMain>
         < PreviousNext next="Best Exchange" 
                        nextProject="/projects/best-exchange" 
-                       previous="SM Dashboard"
+                       previous="Geek Blog"
                        previousProject="/projects/sm-dashboard"/>
         < ContactMe />
         </>
