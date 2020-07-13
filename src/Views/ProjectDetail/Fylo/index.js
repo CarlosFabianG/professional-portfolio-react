@@ -97,9 +97,9 @@ function ProjectDetail(){
             <section className="project-background">
                 <h3>Project Background</h3>
                     <p>
-                        Fylo es una landing page que hice usando HTML5, SASS y unas gotas de JavaScript. 
+                        Fylo es una landing page que hice usando HTML5 y SASS. 
                         Durante el desarrollo se siguió la metodología BEM para nombrar selectores de CSS. Gracias a la ayuda del preprocesador de css SASS el código está modularizado por componente lo que facilita el mantenimiento y la escalabilidad. 
-                        De igual manera se siguió el principio de mobile first. 
+                        Se usaron medidas relativas y media queries para hacer el diseño responsivo para smartphones y laptop. 
                     </p>
                 
             </section>

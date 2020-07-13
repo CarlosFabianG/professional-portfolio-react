@@ -91,7 +91,7 @@ function ProjectDetail(){
                 </p>
                 <span>Landing page / Front End Development</span>
                 <span>HTML / CSS / JS</span>
-                <a href="https://carlosfabiang.github.io/learning-in-mars/" target="_blank" rel="noopener noreferrer"><button>Visitar Website</button></a>
+                <a href="https://manage-landing-page-cf.netlify.app" target="_blank" rel="noopener noreferrer"><button>Visitar Website</button></a>
             </article>
 
             <section className="project-background">
@@ -99,7 +99,7 @@ function ProjectDetail(){
                     <p>
                         Manage es una landing page que hice usando HTML5, SASS y unas gotas de JavaScript. 
                         Durante el desarrollo se siguió la metodología BEM para nombrar selectores de CSS. Gracias a la ayuda del preprocesador de css SASS el código está modularizado por componente lo que facilita el mantenimiento y la escalabilidad. 
-                        De igual manera se siguió el principio de mobile first. 
+                        El diseño es responsive y se siguió el enfoque mobile first. 
                     </p>
                 
             </section>
